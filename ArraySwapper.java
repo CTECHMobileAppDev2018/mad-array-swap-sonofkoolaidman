@@ -31,7 +31,7 @@ class ArraySwapper {
     int[] exampleInput = {1, 2};
     int[] exampleOutput = {2, 1};
     System.out.println("exampleInput before: " + Arrays.toString(exampleInput));    
-    System.out.println("exampleOutput: " + Arrays.toString(exampleInput));    
+    System.out.println("exampleOutput: " + Arrays.toString(exampleOutput));    
     
     // This calls the first swap method
     testSwapper.arraySwap(exampleInput);
