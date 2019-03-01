@@ -8,6 +8,9 @@ class ArraySwapper {
     // Swap the two items in "inputArray" and return the output
     // put your code here
     int temp;
+    temp = inputArray[0];
+    inputArray[0] = inputArray[1];
+    inputArray[1] = temp;
         
   }
   
@@ -17,7 +20,18 @@ class ArraySwapper {
     // Swap the two items in "inputArray" and return the output
     // Remember to make sure that loc1 and loc2 are valid positions in the array!
     int temp;
-        
+    
+    if (loc1 > inputArray.length + 1) {
+     System.out.println("Error! input location too large");
+    } else if (loc2 > inputArray.length + 1) {
+      System.out.println("Error! input location too large");
+    } else {
+      temp = inputArray[loc1];
+      inputArray[loc1] = inputArray[loc2];
+      inputArray[loc2] = temp;
+    }
+    
+    
   }
 
   
